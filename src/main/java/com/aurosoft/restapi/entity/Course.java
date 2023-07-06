@@ -62,6 +62,14 @@ public class Course {
                 ", description='" + description + '\'' +
                 '}';
     }
+    public void assignStudentToCourse(Student student)
+    {
+        this.students.add(student);
+        student.getCourses().add(this);
+    }
+
+
+
 
     public Long getCourseId() {
         return courseId;

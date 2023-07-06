@@ -23,7 +23,7 @@ private InstructorMapper instructorMapper;
         return courseDTO;
     }
 
-    public Course fromCourse(CourseDTO courseDTO)
+    public Course fromCourseDTO(CourseDTO courseDTO)
     {
         Course course= new Course();
         BeanUtils.copyProperties(courseDTO, course);
