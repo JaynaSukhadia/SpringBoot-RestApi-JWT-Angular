@@ -68,7 +68,10 @@ public class Course {
         student.getCourses().add(this);
     }
 
-
+    public void removeStudentFromCourse(Student student) {
+        this.students.remove(student);
+        student.getCourses().remove(this);
+    }
 
 
     public Long getCourseId() {
@@ -129,4 +132,6 @@ public class Course {
         this.description = description;
         this.instructor = instructor;
     }
+
+
 }

@@ -17,7 +17,7 @@ public class StudentMapper {
         return studentDTO;
     }
 
-    public Student fromStudent(StudentDTO studentDTO)
+    public Student fromStudentDTO(StudentDTO studentDTO)
     {
         Student student= new Student();
         BeanUtils.copyProperties(studentDTO, student);
