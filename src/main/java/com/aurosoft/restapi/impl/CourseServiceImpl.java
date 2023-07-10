@@ -13,10 +13,13 @@ import jakarta.persistence.EntityNotFoundException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.stereotype.Service;
 
 import java.awt.print.Pageable;
 import java.util.stream.Collectors;
 
+
+@Service
 public class CourseServiceImpl implements CourseService {
 
 
